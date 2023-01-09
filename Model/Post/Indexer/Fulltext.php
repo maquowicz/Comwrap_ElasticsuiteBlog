@@ -64,7 +64,6 @@ class Fulltext implements ActionInterface, MviewActionInterface
     public function execute($ids)
     {
         $storeIds = array_keys($this->storeManager->getStores());
-        /** @var IndexerHandler $saveHandler */
         $saveHandler = $this->indexerHandler;
         foreach ($storeIds as $storeId) {
             $dimension = $this->dimensionFactory->create(['name' => 'scope', 'value' => $storeId]);
@@ -81,8 +80,6 @@ class Fulltext implements ActionInterface, MviewActionInterface
     public function executeFull()
     {
         $storeIds = array_keys($this->storeManager->getStores());
-
-        /** @var IndexerHandler $saveHandler */
         $saveHandler = $this->indexerHandler;
 
         foreach ($storeIds as $storeId) {

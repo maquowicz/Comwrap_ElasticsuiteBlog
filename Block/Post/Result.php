@@ -24,7 +24,7 @@ class Result extends \Magento\Framework\View\Element\Template
      *
      * @param TemplateContext          $context               Template contexte.
      * @param QueryFactory             $queryFactory          Query factory.
-     * @param PageCollectionFactory    $pageCollectionFactory Page collection factory.
+     * @param PostCollectionFactory    $pageCollectionFactory Page collection factory.
      * @param array                    $data                  Data.
      */
     public function __construct(
@@ -142,7 +142,7 @@ class Result extends \Magento\Framework\View\Element\Template
     /**
      * Init blog post collection.
      *
-     * @param postCollectionFactory $collectionFactory Blog post collection.
+     * @param PostCollectionFactory $collectionFactory Blog post collection.
      *
      * @return mixed
      */

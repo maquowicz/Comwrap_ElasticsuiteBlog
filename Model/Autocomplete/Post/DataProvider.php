@@ -41,7 +41,7 @@ class DataProvider implements DataProviderInterface
     protected $termDataProvider;
 
     /**
-     * @var CmsCollectionFactory
+     * @var PostCollectionFactory
      */
     protected $postCollectionFactory;
 
@@ -74,7 +74,7 @@ class DataProvider implements DataProviderInterface
      * @param ItemFactory           $itemFactory          Suggest item factory.
      * @param QueryFactory          $queryFactory         Search query factory.
      * @param TermDataProvider      $termDataProvider     Search terms suggester.
-     * @param postCollectionFactory  $postCollectionFactory Post collection factory.
+     * @param PostCollectionFactory $postCollectionFactory Post collection factory.
      * @param ConfigurationHelper   $configurationHelper  Autocomplete configuration helper.
      * @param StoreManagerInterface $storeManager         Store manager.
      * @param string                $type                 Autocomplete provider type.
