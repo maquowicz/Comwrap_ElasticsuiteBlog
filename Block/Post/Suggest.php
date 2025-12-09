@@ -134,6 +134,7 @@ class Suggest extends \Magento\Framework\View\Element\Template
     private function initPostCollection($collectionFactory)
     {
         $postCollection = $collectionFactory->create();
+        $postCollection->setStoreId($this->_storeManager->getStore()->getId());
 
         $postCollection->setPageSize($this->getNumberOfResults());
 
